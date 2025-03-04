@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/creepy_smile"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/creepy_smile"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31"
+        >
+
+        <!-- Launcher Activity (First Screen) -->
+        <activity android:name=".IndexActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Second Activity (Opened after button click) -->
+        <activity android:name=".MainActivity"  />
+    </application>
+
+</manifest>
