@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".bothActivity" />
+
         <!-- Second Activity (Opened after button click) -->
         <activity android:name=".MainActivity"  />
     </application>
